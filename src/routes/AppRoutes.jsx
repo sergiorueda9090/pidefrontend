@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 // Páginas del Dashboard
 import Dashboard  from '../pages/Dashboard';
 import Products   from '../pages/Products';
-import Categories from '../categories/Categories'; 
+import Category   from '../categories/Main';
 import Usuarios   from '../usuarios/Main';
 
 import Orders     from '../pages/Orders';
@@ -64,7 +64,7 @@ const AppRoutes = () => {
         path="/categories"
         element={
           <ProtectedRoute>
-            <Categories />
+            <Category />
           </ProtectedRoute>
         }
       />

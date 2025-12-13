@@ -6,7 +6,7 @@ import {
 } from '@mui/material';
 import { Add } from '@mui/icons-material';
 
-const CategoryHeader = ({ onAddNew }) => {
+const MainHeader = ({ onAddNew }) => {
   return (
     <Box className="page-header-actions">
       <Box>
@@ -29,4 +29,4 @@ const CategoryHeader = ({ onAddNew }) => {
   );
 };
 
-export default CategoryHeader;
+export default MainHeader;

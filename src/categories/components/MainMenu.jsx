@@ -12,7 +12,7 @@ import {
   VisibilityOff,
 } from '@mui/icons-material';
 
-const CategoryMenu = ({ anchorEl, open, onClose, category, onEdit, onDelete, onToggleActive }) => {
+const MainMenu = ({ anchorEl, open, onClose, category, onEdit, onDelete, onToggleActive }) => {
   return (
     <Menu
       anchorEl={anchorEl}
@@ -49,4 +49,4 @@ const CategoryMenu = ({ anchorEl, open, onClose, category, onEdit, onDelete, onT
   );
 };
 
-export default CategoryMenu;
+export default MainMenu;
