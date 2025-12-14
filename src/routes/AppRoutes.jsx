@@ -2,10 +2,12 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 // Páginas del Dashboard
-import Dashboard  from '../pages/Dashboard';
-import Products   from '../pages/Products';
-import Category   from '../categories/Main';
-import Usuarios   from '../usuarios/Main';
+import Dashboard     from '../pages/Dashboard';
+import Products      from '../pages/Products';
+import Category      from '../categories/Main';
+import Subcategory   from '../subcategories/Main';
+import Usuarios      from '../usuarios/Main';
+import Brands        from '../brands/Main';
 
 import Orders     from '../pages/Orders';
 import Offers     from '../pages/Offers';
@@ -65,6 +67,26 @@ const AppRoutes = () => {
         element={
           <ProtectedRoute>
             <Category />
+          </ProtectedRoute>
+        }
+      />
+
+      {/* Subcategorías */}
+      <Route
+        path="/subcategories"
+        element={
+          <ProtectedRoute>
+            <Subcategory />
+          </ProtectedRoute>
+        }
+      />
+      
+      {/* Brands */}
+      <Route
+        path="/brands"
+        element={
+          <ProtectedRoute>
+            <Brands />
           </ProtectedRoute>
         }
       />

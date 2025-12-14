@@ -28,6 +28,8 @@ import {
   Category,
   Person,
   Receipt,
+  AccountTree,
+  Store
 } from '@mui/icons-material';
 import { useNavigate, useLocation } from 'react-router-dom';
 import './styles/Sidebar.css';
@@ -46,6 +48,8 @@ const Sidebar = ({ open, onClose, drawerWidth = 280 }) => {
     { text: 'Dashboard', icon: <Dashboard />, path: '/dashboard' },
     { text: 'Usuarios',  icon: <Person />, path: '/usuarios' },
     { text: 'Categorías', icon: <Category />, path: '/categories' },
+    { text: 'SubCategorías', icon: <AccountTree />, path: '/subcategories' },
+    { text: 'Marcas',     icon: <Store />, path: '/brands' },
     { text: 'Productos', icon: <Inventory />, path: '/products' },
     { text: 'Pedidos', icon: <ShoppingCart />, path: '/orders' },
     { text: 'Clientes', icon: <People />, path: '/customers' },
