@@ -8,13 +8,14 @@ import Category      from '../categories/Main';
 import Subcategory   from '../subcategories/Main';
 import Usuarios      from '../usuarios/Main';
 import Brands        from '../brands/Main';
+import Atributos     from  '../atributos/Main';
 
 import Orders     from '../pages/Orders';
 import Offers     from '../pages/Offers';
 import Reports    from '../pages/Reports';
 import Invoices   from '../pages/Invoices';
 import Settings   from '../pages/Settings';
-
+import AgentsSettings from '../agentes/AgentsSettings';
 
 
 // Componente de ruta protegida
@@ -90,6 +91,15 @@ const AppRoutes = () => {
           </ProtectedRoute>
         }
       />
+      
+      <Route
+        path="/atributos"
+        element={
+          <ProtectedRoute>
+            <Atributos />
+          </ProtectedRoute>
+        }
+      />
 
       {/* Pedidos */}
       <Route
@@ -142,6 +152,15 @@ const AppRoutes = () => {
       />
 
       {/* Configuración */}
+      <Route
+        path="/agents"
+        element={
+          <ProtectedRoute>
+            <AgentsSettings />
+          </ProtectedRoute>
+        }
+      />
+
       <Route
         path="/settings"
         element={

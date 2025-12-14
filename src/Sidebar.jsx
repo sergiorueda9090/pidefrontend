@@ -29,7 +29,9 @@ import {
   Person,
   Receipt,
   AccountTree,
-  Store
+  Store,
+  Tune,
+  Psychology
 } from '@mui/icons-material';
 import { useNavigate, useLocation } from 'react-router-dom';
 import './styles/Sidebar.css';
@@ -45,13 +47,17 @@ const Sidebar = ({ open, onClose, drawerWidth = 280 }) => {
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   const menuItems = [
-    { text: 'Dashboard', icon: <Dashboard />, path: '/dashboard' },
-    { text: 'Usuarios',  icon: <Person />, path: '/usuarios' },
-    { text: 'Categorías', icon: <Category />, path: '/categories' },
+    { text: 'Dashboard',     icon: <Dashboard />, path: '/dashboard' },
+    { text: 'Usuarios',      icon: <Person />, path: '/usuarios' },
+    { text: 'Categorías',    icon: <Category />, path: '/categories' },
     { text: 'SubCategorías', icon: <AccountTree />, path: '/subcategories' },
-    { text: 'Marcas',     icon: <Store />, path: '/brands' },
-    { text: 'Productos', icon: <Inventory />, path: '/products' },
-    { text: 'Pedidos', icon: <ShoppingCart />, path: '/orders' },
+    { text: 'Marcas',        icon: <Store />, path: '/brands' },
+    { text: 'Atributos',     icon: <Tune />, path: '/atributos' },
+    { text: 'Productos',     icon: <Inventory />, path: '/products' },
+    { text: 'Pedidos',       icon: <ShoppingCart />, path: '/orders' },
+   
+    
+
     { text: 'Clientes', icon: <People />, path: '/customers' },
     { text: 'Ofertas', icon: <LocalOffer />, path: '/offers' },
     { text: 'Reportes', icon: <Assessment />, path: '/reports' },
@@ -60,6 +66,7 @@ const Sidebar = ({ open, onClose, drawerWidth = 280 }) => {
 
   const bottomMenuItems = [
     { text: 'Configuración', icon: <Settings />, path: '/settings' },
+    { text: 'Agentes',      icon: <Psychology />, path: '/agents' },
     { text: 'Cerrar Sesión', icon: <ExitToApp />, path: '/logout' },
   ];
 

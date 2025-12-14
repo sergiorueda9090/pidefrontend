@@ -6,6 +6,8 @@ import { userStore }         from './userStore/userStore';
 import { categoryStore }     from './categoryStore/categoryStore';
 import { subcategoryStore }  from './subcategoryStore/subcategoryStore';
 import { brandStore }        from './brandStore/brandStore';
+import { attributeStore }    from './attributeStore/attributeStore';
+import { agentStore }        from './agentStore/agentStore';
 
 export const store = configureStore({
   reducer: {
@@ -15,6 +17,8 @@ export const store = configureStore({
     userStore       : userStore.reducer,
     categoryStore   : categoryStore.reducer,
     subcategoryStore: subcategoryStore.reducer,
-    brandStore      : brandStore.reducer
+    brandStore      : brandStore.reducer,
+    attributeStore  : attributeStore.reducer,
+    agentStore      : agentStore.reducer
   }
 })
