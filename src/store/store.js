@@ -7,6 +7,7 @@ import { categoryStore }     from './categoryStore/categoryStore';
 import { subcategoryStore }  from './subcategoryStore/subcategoryStore';
 import { brandStore }        from './brandStore/brandStore';
 import { attributeStore }    from './attributeStore/attributeStore';
+import { attributeValueStore } from './attributeValueStore/attributeValueStore';
 import { agentStore }        from './agentStore/agentStore';
 
 export const store = configureStore({
@@ -19,6 +20,7 @@ export const store = configureStore({
     subcategoryStore: subcategoryStore.reducer,
     brandStore      : brandStore.reducer,
     attributeStore  : attributeStore.reducer,
+    attributeValueStore: attributeValueStore.reducer,
     agentStore      : agentStore.reducer
   }
 })

@@ -9,6 +9,7 @@ import Subcategory   from '../subcategories/Main';
 import Usuarios      from '../usuarios/Main';
 import Brands        from '../brands/Main';
 import Atributos     from  '../atributos/Main';
+import AtributosValores from '../atributosValores/Main';
 
 import Orders     from '../pages/Orders';
 import Offers     from '../pages/Offers';
@@ -100,6 +101,17 @@ const AppRoutes = () => {
           </ProtectedRoute>
         }
       />
+
+      <Route
+        path="/atributos-valores"
+        element={
+          <ProtectedRoute>
+            <AtributosValores />
+          </ProtectedRoute>
+        }
+      />
+
+      
 
       {/* Pedidos */}
       <Route

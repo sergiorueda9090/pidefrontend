@@ -31,6 +31,7 @@ import {
   AccountTree,
   Store,
   Tune,
+  DeviceHub,
   Psychology
 } from '@mui/icons-material';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -53,6 +54,7 @@ const Sidebar = ({ open, onClose, drawerWidth = 280 }) => {
     { text: 'SubCategorías', icon: <AccountTree />, path: '/subcategories' },
     { text: 'Marcas',        icon: <Store />, path: '/brands' },
     { text: 'Atributos',     icon: <Tune />, path: '/atributos' },
+    { text: 'Atributos Valores',     icon: <DeviceHub />, path: '/atributos-valores' },
     { text: 'Productos',     icon: <Inventory />, path: '/products' },
     { text: 'Pedidos',       icon: <ShoppingCart />, path: '/orders' },
    
