@@ -3,13 +3,13 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 // Páginas del Dashboard
 import Dashboard     from '../pages/Dashboard';
-import Products      from '../pages/Products';
 import Category      from '../categories/Main';
 import Subcategory   from '../subcategories/Main';
 import Usuarios      from '../usuarios/Main';
 import Brands        from '../brands/Main';
 import Atributos     from  '../atributos/Main';
 import AtributosValores from '../atributosValores/Main';
+import Products      from '../productos/Main';
 
 import Orders     from '../pages/Orders';
 import Offers     from '../pages/Offers';
