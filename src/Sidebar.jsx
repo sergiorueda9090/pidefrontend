@@ -55,6 +55,7 @@ const Sidebar = ({ open, onClose, drawerWidth = 280 }) => {
     { text: 'Marcas',        icon: <Store />, path: '/brands' },
     { text: 'Atributos',     icon: <Tune />, path: '/atributos' },
     { text: 'Atributos Valores',     icon: <DeviceHub />, path: '/atributos-valores' },
+    { text: 'Categoria Atributos', icon: <Tune />, path: '/attribute-values' },
     { text: 'Productos',     icon: <Inventory />, path: '/products' },
     { text: 'Pedidos',       icon: <ShoppingCart />, path: '/orders' },
    

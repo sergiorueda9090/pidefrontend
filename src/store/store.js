@@ -10,6 +10,7 @@ import { attributeStore }    from './attributeStore/attributeStore';
 import { attributeValueStore } from './attributeValueStore/attributeValueStore';
 import { agentStore }        from './agentStore/agentStore';
 import { productosStore }    from './productosStore/productosStore';
+import { categoriesAtributoStore } from './categoriesAtributostore/categoriesAtributostore';
 
 export const store = configureStore({
   reducer: {
@@ -24,5 +25,6 @@ export const store = configureStore({
     attributeValueStore: attributeValueStore.reducer,
     agentStore      : agentStore.reducer,
     productosStore  : productosStore.reducer,
+    categoriesAtributoStore: categoriesAtributoStore.reducer,
   }
 })

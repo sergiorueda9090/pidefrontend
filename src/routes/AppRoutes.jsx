@@ -9,6 +9,7 @@ import Usuarios      from '../usuarios/Main';
 import Brands        from '../brands/Main';
 import Atributos     from  '../atributos/Main';
 import AtributosValores from '../atributosValores/Main';
+import CategoryAtributos from '../categoriesAtributos/Main';
 import Products      from '../productos/Main';
 
 import Orders     from '../pages/Orders';
@@ -107,6 +108,15 @@ const AppRoutes = () => {
         element={
           <ProtectedRoute>
             <AtributosValores />
+          </ProtectedRoute>
+        }
+      />
+
+      <Route
+        path="/attribute-values"
+        element={
+          <ProtectedRoute>
+            <CategoryAtributos />
           </ProtectedRoute>
         }
       />
